@@ -1,5 +1,6 @@
 import {
   Table,
+  TableHead,
   TableHeader,
   TableRow,
   TableCell,
@@ -8,6 +9,7 @@ import {
   CardContent,
   Command,
   CommandInput,
+  CommandList,
   CardHeader,
   Button,
 } from "@/components/ui";
@@ -50,13 +52,13 @@ export function TransactionList() {
         <Table className="mb-6">
           <TableHeader className="rounded-lg bg-black/5">
             <TableRow>
-              <TableCell className="text-black/70">Order ID</TableCell>
-              <TableCell className="flex items-start gap-1 text-black/70">
+              <TableHead className="text-black/70">Order ID</TableHead>
+              <TableHead className="flex items-start gap-1 text-black/70">
                 Order date <span className="text-[8px]">▼</span>
-              </TableCell>
-              <TableCell className="text-right text-black/70">
+              </TableHead>
+              <TableHead className="text-right text-black/70">
                 Order amount
-              </TableCell>
+              </TableHead>
               <TableCell className="flex items-start justify-end gap-1 text-black/70">
                 Transaction fees
                 <img
@@ -96,6 +98,7 @@ function Header() {
       <div className="flex-col justify-between lg:flex lg:flex-row lg:items-center">
         <Command className="mx-auto my-3 min-w-[248px] max-w-96 rounded-lg border lg:mx-0">
           <CommandInput placeholder="Search by order ID..." />
+          <CommandList />
         </Command>
         <div className="mb-4 flex flex-col gap-3 lg:mb-0 lg:flex-row lg:items-center">
           <Button
