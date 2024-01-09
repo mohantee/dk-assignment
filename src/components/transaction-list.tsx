@@ -38,7 +38,7 @@ export function TransactionList() {
 
   return (
     <Card>
-      <CardContent className="p-0 lg:px-3 lg:pb-6 lg:pt-0">
+      <CardContent className="p-0 pb-4 lg:px-3 lg:pb-6 lg:pt-0">
         <Header />
         <Table className="mb-6">
           <TableHeader className="rounded-lg bg-black/5">

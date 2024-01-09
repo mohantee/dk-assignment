@@ -5,7 +5,7 @@ import groupIcon from "@/assets/group.svg";
 export function Appbar() {
   return (
     <Card className="static top-0 z-10 rounded-none border-b md:sticky">
-      <CardContent className="flex flex-col items-center justify-between gap-3 px-8 py-3 md:flex-row md:gap-0">
+      <CardContent className="flex flex-col items-center justify-between gap-4 px-8 py-3 md:flex-row md:gap-0">
         <div className="flex items-center gap-4">
           <h2 className="text-[0.9375rem]">Payments</h2>
           <button className="flex cursor-help items-center gap-[6px] text-black/70">

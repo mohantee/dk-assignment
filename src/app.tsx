@@ -7,7 +7,6 @@ function App() {
       <Navbar />
       <main className="w-full lg:w-[calc(100vw-14rem)]">
         <Appbar />
-
         <section className="mb-8 px-4 pt-8 lg:px-8">
           <div className="w-34 mb-7 flex items-center justify-between">
             <h3 className="text-xl font-medium text-black/85">Overview</h3>
