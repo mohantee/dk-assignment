@@ -53,14 +53,15 @@ export function TransactionList() {
           <TableHeader className="rounded-lg bg-black/5">
             <TableRow>
               <TableHead className="text-black/70">Order ID</TableHead>
-              <TableHead className="flex items-start gap-1 text-black/70">
-                Order date <span className="text-[8px]">▼</span>
+              <TableHead className="text-black/70">
+                Order date{" "}
+                <span className="relative bottom-[2px] text-[8px]">▼</span>
               </TableHead>
               <TableHead className="text-right text-black/70">
                 Order amount
               </TableHead>
-              <TableHead className="flex items-start justify-end gap-1 text-black/70">
-                Transaction fees
+              <TableHead className="text-right text-black/70">
+                <span className="mr-2">Transaction fees</span>
                 <img
                   src={infoIcon}
                   alt=""
