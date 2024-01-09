@@ -12,7 +12,7 @@ const NUMBERS = [11, 12, 13, 14, 15, 16, 17, 18];
 
 export function Pagination() {
   return (
-    <PaginationContainer className="mx-auto lg:flex">
+    <PaginationContainer className="mx-auto hidden lg:flex">
       <PaginationContent className="gap-4 lg:gap-0">
         <PaginationItem>
           <PaginationPrevious
@@ -20,13 +20,13 @@ export function Pagination() {
             className="border-[1px] border-black/15"
           />
         </PaginationItem>
-        <PaginationItem className="hidden lg:block">
+        <PaginationItem>
           <PaginationLink href="#">1</PaginationLink>
         </PaginationItem>
-        <PaginationItem className="hidden lg:block">
+        <PaginationItem>
           <PaginationEllipsis />
         </PaginationItem>
-        <PaginationItem className="hidden lg:block">
+        <PaginationItem>
           <PaginationLink
             href="#"
             isActive
@@ -36,7 +36,7 @@ export function Pagination() {
           </PaginationLink>
         </PaginationItem>
         {NUMBERS.map((number) => (
-          <PaginationItem key={number} className="hidden lg:block">
+          <PaginationItem key={number}>
             <PaginationLink href="#">{number}</PaginationLink>
           </PaginationItem>
         ))}

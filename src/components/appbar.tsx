@@ -7,10 +7,12 @@ import {
   TooltipTrigger,
   TooltipContent,
   TooltipProvider,
+  CommandList,
 } from "@/components/ui";
 import menuIcon from "@/assets/menu.svg";
 import helpIcon from "@/assets/help.svg";
 import groupIcon from "@/assets/group.svg";
+import { Search } from "lucide-react";
 export function Appbar() {
   return (
     <Card className="static top-0 z-10 rounded-none border-b md:sticky">
@@ -38,6 +40,7 @@ export function Appbar() {
         </div>
         <Command className="max-w-96 rounded-lg border border-none bg-black/5">
           <CommandInput placeholder="Search features, tutorials, etc." />
+          <CommandList />
         </Command>
         <div className="flex gap-3">
           <button aria-label="Messages">

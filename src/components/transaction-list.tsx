@@ -21,8 +21,10 @@ import { Pagination } from "./pagination";
 
 export function TransactionList() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchTransactions = async () => {
+    setIsLoading(true);
     try {
       const response = await fetch("/transactions.json");
       const transactions = await response.json();
@@ -30,11 +32,16 @@ export function TransactionList() {
     } catch (error) {
       console.error(error);
     }
+    setIsLoading(false);
   };
 
   useEffect(() => {
     fetchTransactions();
   }, []);
+
+  if (isLoading) {
+    return <p className="text-center text-2xl">Loading...</p>;
+  }
 
   return (
     <Card>
