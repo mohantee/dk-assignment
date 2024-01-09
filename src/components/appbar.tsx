@@ -12,7 +12,6 @@ import {
 import menuIcon from "@/assets/menu.svg";
 import helpIcon from "@/assets/help.svg";
 import groupIcon from "@/assets/group.svg";
-import { Search } from "lucide-react";
 export function Appbar() {
   return (
     <Card className="static top-0 z-10 rounded-none border-b md:sticky">
