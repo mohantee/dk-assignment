@@ -59,14 +59,14 @@ export function TransactionList() {
               <TableHead className="text-right text-black/70">
                 Order amount
               </TableHead>
-              <TableCell className="flex items-start justify-end gap-1 text-black/70">
+              <TableHead className="flex items-start justify-end gap-1 text-black/70">
                 Transaction fees
                 <img
                   src={infoIcon}
                   alt=""
                   className="hidden self-center lg:inline"
                 />
-              </TableCell>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
