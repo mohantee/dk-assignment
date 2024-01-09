@@ -28,7 +28,7 @@ export function Appbar() {
                 <p className="text-xs">How it works</p>
               </TooltipTrigger>
               <TooltipContent className="bg-black/70 text-white">
-                <p>
+                <p className="text-xs">
                   Transaction fees are charged as a percentage of the order
                   amount according to your plan.
                 </p>
