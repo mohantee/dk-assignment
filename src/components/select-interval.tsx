@@ -9,7 +9,10 @@ import {
 export function SelectInterval() {
   return (
     <Select>
-      <SelectTrigger className="w-[135px] bg-white font-light">
+      <SelectTrigger
+        className="w-[135px] bg-white font-light"
+        aria-label="Select time interval"
+      >
         <SelectValue placeholder="Select interval" />
       </SelectTrigger>
       <SelectContent>

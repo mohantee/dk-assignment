@@ -95,6 +95,7 @@ function Header() {
             variant="outline"
             size="sm"
             className="gap-[0.375rem] font-light"
+            aria-label="Sort"
           >
             Sort
             <img src={sortIcon} alt="" />
@@ -103,6 +104,7 @@ function Header() {
             variant="outline"
             size="sm"
             className="gap-[0.375rem] px-2 font-light"
+            aria-label="Export as CSV"
           >
             <img src={downloadIcon} alt="" />
           </Button>

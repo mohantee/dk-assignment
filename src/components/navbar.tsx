@@ -11,7 +11,10 @@ export function Navbar() {
         <img src={logo} className="w-11 cursor-pointer rounded-sm" alt="" />
         <div>
           <h1 className="text-white">Nishyan</h1>
-          <a className="cursor-pointer text-sm text-white/80 underline">
+          <a
+            className="cursor-pointer text-sm text-white/80 underline"
+            href="#"
+          >
             Visit store
           </a>
         </div>
