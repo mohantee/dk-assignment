@@ -22,6 +22,8 @@ pnpm install
 pnpm dev
 ```
 
+The app will be exposed at http://localhost:5173.
+
 ### Features
 
 - The app uses shadcn UI library, Radix UI primitives, and TailwindCSS for building the UI.
