@@ -61,7 +61,7 @@ export function TransactionList() {
                 Order amount
               </TableHead>
               <TableHead className="text-right text-black/70">
-                <span className="mr-2">Transaction fees</span>
+                <span className="mr-1">Transaction fees</span>
                 <img
                   src={infoIcon}
                   alt=""
