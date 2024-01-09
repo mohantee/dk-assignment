@@ -1,6 +1,6 @@
 ### Prerequisites
 
-This project uses pnpm. To install and learn more about it please visit [the official pnpm website](https://pages.github.com/).
+This project uses pnpm. To install and learn more about it please visit [the official pnpm website](https://pnpm.io/installation).
 
 Afterwards, you can run the project locally by following the steps below:
 

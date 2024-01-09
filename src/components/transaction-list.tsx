@@ -38,7 +38,7 @@ export function TransactionList() {
 
   return (
     <Card>
-      <CardContent className="p-0 md:pb-6 md:pt-0 lg:px-3">
+      <CardContent className="p-0 lg:px-3 lg:pb-6 lg:pt-0">
         <Header />
         <Table className="mb-6">
           <TableHeader className="rounded-lg bg-black/5">
@@ -86,11 +86,11 @@ export function TransactionList() {
 function Header() {
   return (
     <CardHeader className="p-0 px-6 lg:px-0">
-      <div className="flex-col justify-between md:flex-row md:items-center lg:flex">
+      <div className="flex-col justify-between lg:flex lg:flex-row lg:items-center">
         <Command className="mx-auto my-3 min-w-[248px] max-w-96 rounded-lg border lg:mx-0">
           <CommandInput placeholder="Search by order ID..." />
         </Command>
-        <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center lg:mb-0">
+        <div className="mb-4 flex flex-col gap-3 lg:mb-0 lg:flex-row lg:items-center">
           <Button
             variant="outline"
             size="sm"
